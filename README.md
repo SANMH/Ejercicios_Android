@@ -60,15 +60,17 @@ public class MainActivity extends AppCompatActivity {
     
         }
 ```
-![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio_7.png)
-<img src=“https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio_7.png”>
-
+Resultado:
+![resultado](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio_7.png?raw=true)
 
 # 12 - Lanzar un segundo "Activity" y pasar parámetros
 problema:
 Confeccionar un programa que solicite el ingrese de una dirección de un sitio web y seguidamente abrir una segunda ventana que muestre dicha página.
+1 - Nuestro primer Activity tendrá la siguiente interfaz visual (ver controles):
+
 
 Para resolver este problema utilizaremos el control visual WebView que nos permite mostrar el contenido de un sitio web.
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/12-1.png)
 
 ### Codigo MainActivity:
 ```sh
@@ -97,11 +99,9 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
+2 La segunda interfaz visual (recordemos que debemos presionar el botón derecho en la ventana Project (sobre app) y seleccionar la opción New -> Activity -> Emplty Activity):
 
-Image:
-
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
-
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/12-2.png)
 
 ### Codigo Actividad2:
 ```
@@ -132,10 +132,22 @@ public class Actividad2 extends AppCompatActivity {
     }
 }
 ```
+## Importante
+Como nuestra aplicación debe acceder a internet debemos hacer una configuración en el archivo "AndroidManifest.xml", podemos ubicar este archivo:
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/12-2.png)
+
+resultado:
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio12.png)
+
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio12_2.png)
+interfaz 2:
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio12_3.png)
 
 # 28 - Grabación de audio mediante el grabador provisto por Android (via Intent)
 Problema:
 Disponer dos objetos de la clase Button con las etiquetas "grabar" y "reproducir". Cuando se presione el primer botón proceder a activar la grabadora provista por Android. Cuando se presione el segundo botón reproducir el audio grabado.
+
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/12-2.png)
 
 ### Codigo:
 ```
@@ -177,13 +189,20 @@ public class MainActivity extends AppCompatActivity {
 
 }
 ```
-Image:
-
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+resultado:
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio28.png)
 
 # 40 - Evento touch: juego del buscaminas
 Problema:
 Implementar el juego del Buscaminas. Crear una grilla de 8*8 celdas.
+
+1 - Creamos un proyecto llamado: BuscaMinas
+Borramos el TextView que agrega automáticamente el Android Studio y disponemos un Button y un LinearLayout:
+
+Al botón inicializamos la propiedad onClick con el valor "reiniciar" y al LinearLayout le asignamos el ID como "layout1".
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/40-1.png)
+
+2 Luego codificamos las clases MainActivity. 
 ### Codigo:
 ```sh
 package com.example.ejercicio_40;
@@ -427,9 +446,33 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     }
 }
 ```
-Image:
+3 Creamos una clase llamada Casilla desde el Android Studio:
+```
+package com.example.ejercicio_40;
 
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+public class Casilla {
+    public int x,y,ancho;
+    public int contenido=0;
+    public boolean destapado=false;
+    public void fijarxy(int x,int y, int ancho) {
+        this.x=x;
+        this.y=y;
+        this.ancho=ancho;
+    }
+
+    public boolean dentro(int xx,int yy) {
+        if (xx>=this.x && xx<=this.x+ancho && yy>=this.y && yy<=this.y+ancho)
+            return true;
+        else
+            return false;
+    }
+}
+```
+resultado:
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio40-1.png)
+
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio40-2.png)
+
 
 # 43 - Localización y archivo strings.xml
 Problema:
@@ -438,8 +481,10 @@ Crear un nuevo proyecto Proyecto046 basado en el ejercicio_42 de tal manera que 
 Las abreviaturas para los distintos lenguajes los podemos ver en la página ISO 639-1 Code (segunda columna) y para obtener las distintas regiones utilizamos la tabla ISO 3166-1-alpha-2
 
 Para agregar un nuevo idioma de una región procedemos de la misma manera que para cuando seleccionamos un lenguaje: botón derecho sobre la carpeta values :New Values Resource File y en este diálogo especificamos que crearemos un archivo llamado strings.xml y seleccionaremos "Locate":
+
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/43-1.png)
 ### Codigo ejercicio_41:
-```sh
+```
 package com.example.ejercicio_43;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -480,8 +525,8 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
-Image:
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+Resultado 1:
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio43-1.png)
 
 
 ### Codigo ejercicio_42 strings_ingles:
@@ -497,10 +542,8 @@ Image:
 </resources>
 ```
 
-Image:
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
-
-
+Resultado 2:
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio43-2.png)
 
 ### Codigo ejercicio_43 otro idioma:
 ```
@@ -513,43 +556,6 @@ Image:
     <string name="botonoperacion">risolvere  </string>
 </resources>
 ```
-Image:
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
-(optional) Third:
+Resultado 3
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio43-3.png)
 
-### Todos
-
- - Write MORE Tests
- - Add Night Mode
-
-License
-----
-
-MIT
-
-
-**Free Software, Hell Yeah!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
