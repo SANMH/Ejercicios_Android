@@ -60,9 +60,7 @@ public class MainActivity extends AppCompatActivity {
     
         }
 ```
-Image:
-
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/resultados/ejercicio_7.png)
 
 
 # 12 - Lanzar un segundo "Activity" y pasar parámetros
