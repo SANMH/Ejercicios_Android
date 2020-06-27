@@ -13,8 +13,6 @@ En la interfaz visual implementamos lo siguiente
 
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/7_1.png)
 
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
-
 ### Codigo:
 
 ```sh
