@@ -139,11 +139,15 @@ Como nuestra aplicación debe acceder a internet debemos hacer una configuració
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/12-2.png)
 
 resultado:
+
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio12.png)
 
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio12_2.png)
+
 interfaz 2:
+
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio12_3.png)
+
 
 # 28 - Grabación de audio mediante el grabador provisto por Android (via Intent)
 Problema:
@@ -192,6 +196,7 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 resultado:
+
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio28.png)
 
 # 40 - Evento touch: juego del buscaminas
@@ -471,6 +476,7 @@ public class Casilla {
 }
 ```
 resultado:
+
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio40-1.png)
 
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio40-2.png)
@@ -528,6 +534,7 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 Resultado 1:
+
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio43-1.png)
 
 
@@ -545,6 +552,7 @@ Resultado 1:
 ```
 
 Resultado 2:
+
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio43-2.png)
 
 ### Codigo ejercicio_43 otro idioma:
@@ -559,5 +567,6 @@ Resultado 2:
 </resources>
 ```
 Resultado 3
+
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio43-3.png)
 
