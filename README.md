@@ -61,7 +61,9 @@ public class MainActivity extends AppCompatActivity {
         }
 ```
 Resultado:
+
 ![resultado](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio_7.png?raw=true)
+
 
 # 12 - Lanzar un segundo "Activity" y pasar parámetros
 problema:
