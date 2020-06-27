@@ -11,6 +11,7 @@ ListView (llamado listView por defecto))
 En la interfaz visual implementamos lo siguiente 
 - (primero disponemos un TextView en la parte superior (cuyo id lo definimos con el valor tv1) y un ListView (y definimos su id con el valor list1))
 
+https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/7_1.png
 
 ![](https://pandao.github.io/editor.md/examples/images/4.jpg)
 
