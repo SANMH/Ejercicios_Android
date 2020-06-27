@@ -141,7 +141,6 @@ Como nuestra aplicación debe acceder a internet debemos hacer una configuració
 resultado:
 
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio12.png)
-
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio12_2.png)
 
 interfaz 2:
@@ -477,8 +476,7 @@ public class Casilla {
 ```
 resultado:
 
-![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio40-1.png)
-
+![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio40-1.png) 
 ![](https://raw.githubusercontent.com/SANMH/Ejercicios_Android/master/assets/ejercicio40-2.png)
 
 
